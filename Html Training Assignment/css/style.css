@@ -14,6 +14,7 @@
 
 
 .logocontainer{
+    margin-left: 15px;
     margin-top: 106px;
     left: 906px;
     width: 272px;
@@ -23,7 +24,8 @@
 
 
 .dic{
-     font-size: 20px;
+    font-size: 20px;
+    margin-left: 15px;
     margin-top: 19.3px;
     left: 905px;
     width: 500px;
@@ -38,6 +40,7 @@
 
 .button{
     width: 138px;
+    margin-left: 15px;
     height: 45px;
     background-color: rgb(200, 36, 47);
     color: #FFFFFF;
@@ -47,7 +50,7 @@
 
 .forgotpass{
     top: 539px;
-    margin-left: 150.44px;
+    margin-left: 165.44px;
     color: #ADADAD;
     width: 121px;
     height: 20px;
@@ -62,4 +65,9 @@
     border-radius: 5px;
     border: solid 1px;
     border-color: #ADADAD ;
+}
+.register{
+    color: #adadad; 
+    margin-top: 23.13px;
+    margin-left: 15px;
 }
