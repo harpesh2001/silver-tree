@@ -103,6 +103,7 @@ body {
     overflow-x: auto;
     display: flex;
     align-items: center;
+    padding: 0;
 }
 
 
@@ -306,9 +307,9 @@ b {
     margin-right: 15px;
 }
 
-.nav {
+nav {
     left: 0px;
-    background: #FFFFFF 0% 0% no-repeat padding-box;
+    background: #FFFFFF;
     opacity: 1;
 }
 
@@ -363,4 +364,42 @@ b {
     font-weight: 600;
     line-height: 15px;
     color: #3E3E3E;
+}
+
+.dataGraph {
+    width: 802px;
+    height: 400px;
+    /* UI Properties */
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    opacity: 1;
+    padding: 0;
+}
+
+.end {
+    margin: 0;
+}
+
+.data {
+    margin-top: 25px;
+}
+
+.chart {
+    width: 385px;
+    height: 398px;
+    /* UI Properties */
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    opacity: 1;
+    margin-left: 20px;
+}
+
+.sale {
+    float: left;
+    font-size: 25px;
+    font-family: 'roboto', sans-serif;
+    font-weight: bolder;
+    line-height: 20px;
+    color: #3E3E3E;
+
 }
