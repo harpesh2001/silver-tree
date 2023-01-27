@@ -391,15 +391,30 @@ nav {
     background: #FFFFFF 0% 0% no-repeat padding-box;
     border-radius: 5px;
     opacity: 1;
-    margin-left: 20px;
+    margin-left: 100px;
+    justify-content: center;
 }
 
 .sale {
-    float: left;
     font-size: 25px;
     font-family: 'roboto', sans-serif;
     font-weight: bolder;
-    line-height: 20px;
     color: #3E3E3E;
 
+}
+
+table {
+    background-color: #FFFFFF
+}
+
+#innerrow4 {
+    margin: 0;
+    padding: 0;
+}
+
+#view {
+    float: right;
+    border: none;
+    background-color: #FFFFFF;
+    color: red;
 }
