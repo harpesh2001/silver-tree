@@ -314,6 +314,42 @@ nav {
     opacity: 1;
 }
 
+#circleUSA {
+    margin-top: 4px;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    background: #C8242F 0% 0% no-repeat padding-box;
+}
+
+#circleRussia {
+    margin-top: 4px;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    background: #F16C20 0% 0% no-repeat padding-box;
+}
+
+#chart {
+    margin-left: 50px;
+}
+
+#circleCanada {
+    margin-top: 4px;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    background: #A2B86C 0% 0% no-repeat padding-box;
+}
+
+#circleIndia {
+    margin-top: 4px;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    background: #EBC844 0% 0% no-repeat padding-box;
+}
+
 .mainContent {
     padding-left: 20px;
 }
@@ -341,6 +377,7 @@ nav {
     background: #FFFFFF 0% 0% no-repeat padding-box;
     border-radius: 5px;
     opacity: 1;
+    margin-right: 100px;
 }
 
 #dashboardImg {
