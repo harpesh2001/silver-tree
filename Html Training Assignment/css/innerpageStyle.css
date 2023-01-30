@@ -1,65 +1,423 @@
-#analysisHeading {
-    height: 39px;
+body {
+    margin: 0;
+    padding: 0;
+    top: 0px;
+    left: 0px;
+    opacity: 1;
+}
+
+.main {
+    align-self: flex-start;
+    /* margin: 0;
+    padding: 0; */
+}
+
+#menuBar {
+    width: 20px;
+    height: 20px;
+    opacity: 1;
+    position: sticky;
+    margin: 10px;
+}
+
+#logo {
+    top: 25px;
+    left: 72px;
+    width: 142px;
+    height: 30px;
+    opacity: 1;
+}
+
+.header {
+    padding-top: 15px;
+    left: 0px;
+    opacity: 1;
+}
+
+.search {
+    margin-top: 10px;
+}
+
+#search {
+
+    top: 32px;
+    left: 291px;
+    width: 20px;
+    height: 20px;
+    opacity: 1;
+}
+
+#notification {
+    top: 28px;
+    left: 1294px;
+    width: 22px;
+    height: 21px;
+    opacity: 1;
+}
+
+#profile {
+    top: 18px;
+    left: 1368px;
+    width: 44px;
+    height: 44px;
+    margin-left: 20px;
+}
+
+#downArrow {
+    top: 37px;
+    left: 1507px;
+    width: 15px;
+    height: 15px;
+    opacity: 1;
+    margin-left: 5px;
+
+}
+
+.dashboardContainer {
+    top: 105px;
+    left: 30px;
+    width: 183px;
+    height: 43px;
+
+    background: #FFF3F4 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    opacity: 1;
+    margin: 5px;
+    margin-left: 10px;
+
+}
+
+
+#dashboard {
+    align-self: center;
+    height: 15px;
+
+    opacity: 1;
+    margin-left: 10px;
+    margin-right: 15px;
+}
+
+.anaContainer {
+    top: 140px;
+    left: 30px;
+    width: 183px;
+    height: 43px;
+
+    border-radius: 5px;
+    opacity: 1;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+
+}
+
+#analysis {
+    align-self: center;
+    top: 171px;
+    left: 46px;
+    width: 19px;
+    height: 18px;
+    margin-left: 10px;
+    margin-right: 15px;
+}
+
+.indContainer {
+    top: 175px;
+    left: 30px;
+    width: 183px;
+    height: 43px;
+    opacity: 1;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+}
+
+#index {
+    align-self: center;
+    top: 225px;
+    left: 48px;
+    width: 15px;
+    height: 15px;
+    opacity: 1;
+    margin-left: 10px;
+    margin-right: 15px;
+}
+
+.hisContainer {
+    top: 210px;
+    left: 30px;
+    width: 183px;
+    height: 43px;
+    opacity: 1;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+}
+
+#history {
+    align-self: center;
+    top: 278px;
+    left: 47px;
+    width: 16px;
+    height: 16px;
+    opacity: 1;
+    margin-left: 10px;
+    margin-right: 15px;
+}
+
+.userContainer {
+    top: 245px;
+    left: 30px;
+    width: 183px;
+    height: 43px;
+    opacity: 1;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+}
+
+#user {
+    align-self: center;
+    top: 330px;
+    left: 53px;
+    width: 16px;
+    height: 18px;
+    opacity: 1;
+    margin-left: 10px;
+    margin-right: 15px;
+}
+
+.maintainContainer {
+    top: 245px;
+    left: 30px;
+    width: 183px;
+    height: 43px;
+    opacity: 1;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+}
+
+#maintanance {
+    align-self: center;
+    top: 383px;
+    left: 48px;
+    width: 13px;
+    height: 18px;
+    opacity: 1;
+    margin-left: 10px;
+    margin-right: 15px;
+}
+
+#active {
+    width: 78px;
+    height: 21px;
+    font: normal normal normal 16px/21px Roboto;
+    letter-spacing: 0px;
+    color: #C8242F;
+    opacity: 1;
+}
+
+b {
+    width: 39px;
+    height: 21px;
+    letter-spacing: 0px;
+    color: #3E3E3E;
+    opacity: 1;
+    font-weight: 400;
+}
+
+.settingsContainer {
+    top: 245px;
+    left: 30px;
+    width: 183px;
+    height: 43px;
+    opacity: 1;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+}
+
+#settings {
+    align-self: center;
+    top: 436px;
+    left: 47px;
+    width: 17px;
+    height: 17px;
+    opacity: 1;
+    margin-left: 10px;
+    margin-right: 15px;
+}
+
+.nav {
+    padding-left: 25px;
+    background: #FFFFFF;
+    opacity: 1;
+}
+
+.mainContent {
+    /* / padding-left: 20px;/ */
+}
+
+.cont {
+    padding-top: 0;
+}
+
+#db {
+    width: 146px;
+    height: px;
     text-align: left;
-    font: normal normal medium 30px/39px Roboto;
+    font-size: 39px;
     letter-spacing: 0px;
     color: #000000;
     opacity: 1;
+    font-weight: bolder;
+    margin-left: 15px;
+    margin-top: 15px;
 }
 
-.formContainer {
-    background: #FFFFFF 0% 0% no-repeat padding-box;
+/*-----------------*/
+.formcontainer {
+    padding: 15.98px 30.5px 0px 30.5px;
     border-radius: 5px;
     opacity: 1;
 }
 
-#oneColumn {
-    margin-left: 30px;
-    margin-top: 22px;
-    text-align: left;
-    font-weight: bold;
+#onecolumn {
+
+    color: #3E3E3E;
     font-size: 25px;
+    font-weight: bold;
+}
+
+#twocolumn {
+    /* margin-top: 44px;
+    margin-left: 29px; */
+    color: #3E3E3E;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+select:invalid {
+    color: #ADADAD;
+}
+
+#threecolumn {
+    /* margin-top: 44px;
+    margin-left: 29px; */
+    color: #3E3E3E;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#iuser {
+    border: 1px dashed #ADADAD;
+}
+
+#fourcolumn {
+    /* margin-top: 44px;
+    margin-left: 29px; */
+    color: #3E3E3E;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#uiborder {
+    border: 1px solid #FF3B3B;
+}
+
+#uidesign {
+    color: #FF3B3B;
+}
+
+#otherdesign {
+    /* margin-top: 44px;
+    margin-left: 29px; */
+    color: #3E3E3E;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#text2 {
+    /* margin-top: 21.13px;
+    margin-left: 29px; */
+    text-align: left;
+    font: normal normal medium 18px/24px Roboto;
     letter-spacing: 0px;
     color: #3E3E3E;
     opacity: 1;
-}
 
-#formGroupInput {
-    margin-left: 30px;
-    height: 49px;
-    /* UI Properties */
-    border: 1px solid #ADADAD;
-    border-radius: 5px;
-    opacity: 1;
-}
-
-#formGroupInputMultipleline {
-    margin-left: 30px;
-    /* UI Properties */
-    border: 1px solid #ADADAD;
-    border-radius: 5px;
-    opacity: 1;
-}
-
-#fromText {
-    margin-left: 30px;
-    margin-top: 22px;
-    text-align: left;
     font-weight: bold;
-    font-size: 25px;
-    letter-spacing: 0px;
-    color: #3E3E3E;
-    opacity: 1;
 }
 
-#twoColIP {
+#Red {
+    accent-color: #FF0000;
+}
+
+#formRadio {
+    background: #C8242F 0% 0% no-repeat padding-box;
+}
+
+#formInput {
+    width: 1157px;
     margin-top: 10px;
-    margin-left: 30px;
-    height: 49px;
+    margin-left: 15px;
     /* UI Properties */
     border: 1px solid #ADADAD;
     border-radius: 5px;
     opacity: 1;
 }
 
-#threeColIP {}
+#but {
+    width: 124px;
+    height: 36px;
+    border-radius: 20px;
+    border: solid;
+    color: #FF3B3B;
+    background-color: #FFFFFF;
+    image-rendering: auto;
+}
+
+/* #exampleFormControlFile1 {
+    top: 1165px;
+    left: 322px; */
+/* width: 124px;
+    height: 36px; */
+/* border: 1px solid #C8242F;
+    border-radius: 18px;
+    opacity: 1; */
+/* } */
+
+.radio {
+    position: relative;
+    margin-left: 5px;
+}
+
+.checkbox {
+    position: relative;
+    margin-left: 5px;
+
+}
+
+.second {
+    margin-left: 100px;
+
+}
+
+.btn-primary {
+    background: #C8242F 0% 0% no-repeat padding-box;
+    border: 1px solid #C8242F;
+    border-radius: 23px;
+    opacity: 1;
+    width: 124px;
+    height: 40px;
+}
+
+.btn-outline-secondary {
+    border: 1px solid #C8242F;
+    border-radius: 22px;
+    opacity: 1;
+    color: #C8242F;
+    width: 145px;
+    height: 40px;
+}
