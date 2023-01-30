@@ -24,26 +24,16 @@
       href="css/dashboardStyle.css"
     />
     <script>
-      function error() {
-        var x = document.getElementById("snackbar1");
-        x.className = "show";
-        setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
-      }
-      function inform() {
-        var x = document.getElementById("snackbar2");
-        x.className = "show";
-        setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
-      }
-      function warning() {
-        var x = document.getElementById("snackbar3");
-        x.className = "show";
-        setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
-      }
-      function success() {
-        var x = document.getElementById("snackbar4");
-        x.className = "show";
-        setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
-      }
+     function myFunction() { 
+  // Get the snackbar DIV
+  var x = document.getElementById("snackbar");
+
+  // Add the "show" class to DIV
+  x.className = "show";
+
+  // After 3 seconds, remove the show class from DIV
+  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+}
       </script>
   </head>
   <body>
@@ -209,11 +199,11 @@
 
               <div id="otherdesign"><span>Other Design Elements</span></div><br>
               <div id="text2"><span>File Upload</span></div><br>
-              <form>
+             
                   <div class="form-group">
                     <button id="but">Upload</button>
                   </div>
-              </form><br>
+              <br>
 
 
               <div id="text2"><span>Radio Button</span></div><br>
@@ -257,28 +247,31 @@
               <form>
                 <div class="row">
                     <div class="col">
-                      <button onclick="error()">This is an error message.</button>
-                      <div id="snackbar1">This is an error message.</div>
+                      <button onclick="myFunction()">Show Snackbar</button>
+
+                      <!-- The actual snackbar -->
+                      <div id="snackbar">Some text some message..</div>
+                      
                     </div>
                     <div class="col">
-                      <button onclick="inform()">This is an error message.</button>
-                      <div id="snackbar2">This is an error message.</div>
+                      <button>This is an error message.</button>
+                      
                     </div>
                 </div><br>
 
                 <div class="row">
                     <div class="col">
-                      <button onclick="warning()">This is an error message.</button>
-                      <div id="snackbar3">This is an error message.</div>
+                      <button >This is an error message.</button>
+                      
                     </div>
                     <div class="col">
                         
-                          <button onclick="success()">This is an error message.</button>
-                          <div id="snackbar4">This is an error message.</div>
+                          <button>This is an error message.</button>
+                          
                         
                     </div>
                 </div><br>
-                
+                <div id="snackbar"></div>
               </form>
 
               <div id="text2"><span>Call to action</span></div><br>

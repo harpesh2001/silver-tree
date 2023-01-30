@@ -339,8 +339,6 @@ select:invalid {
 }
 
 #text2 {
-    /* margin-top: 21.13px;
-    margin-left: 29px; */
     text-align: left;
     font: normal normal medium 18px/24px Roboto;
     letter-spacing: 0px;
@@ -378,16 +376,6 @@ select:invalid {
     image-rendering: auto;
 }
 
-/* #exampleFormControlFile1 {
-    top: 1165px;
-    left: 322px; */
-/* width: 124px;
-    height: 36px; */
-/* border: 1px solid #C8242F;
-    border-radius: 18px;
-    opacity: 1; */
-/* } */
-
 .radio {
     position: relative;
     margin-left: 5px;
@@ -422,102 +410,44 @@ select:invalid {
     height: 40px;
 }
 
-#snackbar1 {
+#snackbar {
     visibility: hidden;
+    /* Hidden by default. Visible on click */
     min-width: 250px;
+    /* Set a default minimum width */
     margin-left: -125px;
+    /* Divide value of min-width by 2 */
     background-color: #333;
-    color: #FF3535;
+    /* Black background color */
+    color: #fff;
+    /* White text color */
     text-align: center;
+    /* Centered text */
     border-radius: 2px;
-    border: solid #FF3535;
+    /* Rounded borders */
     padding: 16px;
+    /* Padding */
     position: fixed;
+    /* Sit on top of the screen */
     z-index: 1;
+    /* Add a z-index if needed */
     left: 50%;
+    /* Center the snackbar */
     bottom: 30px;
-    font-size: 17px;
+    /* 30px from the bottom */
 }
 
-#snackbar1.show {
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+#snackbar.show {
     visibility: visible;
+    /* Show the snackbar */
+    /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+    However, delay the fade out process for 2.5 seconds */
     -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
     animation: fadein 0.5s, fadeout 0.5s 2.5s;
 }
 
-#snackbar2 {
-    visibility: hidden;
-    min-width: 250px;
-    margin-left: -125px;
-    background-color: #333;
-    color: #FF3535;
-    text-align: center;
-    border-radius: 2px;
-    border: solid #FF3535;
-    padding: 16px;
-    position: fixed;
-    z-index: 1;
-    left: 50%;
-    bottom: 30px;
-    font-size: 17px;
-}
-
-#snackbar2.show {
-    visibility: visible;
-    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
-    animation: fadein 0.5s, fadeout 0.5s 2.5s;
-}
-
-
-#snackbar3 {
-    visibility: hidden;
-    min-width: 250px;
-    margin-left: -125px;
-    background-color: #333;
-    color: #FF3535;
-    text-align: center;
-    border-radius: 2px;
-    border: solid #FF3535;
-    padding: 16px;
-    position: fixed;
-    z-index: 1;
-    left: 50%;
-    bottom: 30px;
-    font-size: 17px;
-}
-
-#snackbar3.show {
-    visibility: visible;
-    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
-    animation: fadein 0.5s, fadeout 0.5s 2.5s;
-}
-
-
-#snackbar4 {
-    visibility: hidden;
-    min-width: 250px;
-    margin-left: -125px;
-    background-color: #333;
-    color: #FF3535;
-    text-align: center;
-    border-radius: 2px;
-    border: solid #FF3535;
-    padding: 16px;
-    position: fixed;
-    z-index: 1;
-    left: 50%;
-    bottom: 30px;
-    font-size: 17px;
-}
-
-#snackbar4.show {
-    visibility: visible;
-    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
-    animation: fadein 0.5s, fadeout 0.5s 2.5s;
-}
-
-
-
+/* Animations to fade the snackbar in and out */
 @-webkit-keyframes fadein {
     from {
         bottom: 0;
