@@ -401,6 +401,53 @@ select:invalid {
     height: 40px;
 }
 
+#snackRed {
+    border: 1px solid #FF3535;
+    border-radius: 5px;
+    opacity: 1;
+    height: 45px;
+    vertical-align: middle;
+
+}
+
+#snackBlue {
+    border: 1px solid #00B9E1;
+    border-radius: 5px;
+    opacity: 1;
+    height: 45px;
+    vertical-align: middle;
+
+}
+
+#snackYellow {
+    border: 1px solid #FFA800;
+    border-radius: 5px;
+    opacity: 1;
+    height: 45px;
+    vertical-align: middle;
+
+}
+
+#snackGreen {
+    border: 1px solid #00AF27;
+    border-radius: 5px;
+    opacity: 1;
+    height: 45px;
+    vertical-align: middle;
+
+}
+
+b {
+    margin-top: 5px;
+}
+
+#snackIcon {
+    width: 20px;
+    height: 20px;
+
+    margin-left: 5px;
+}
+
 .btn-outline-secondary {
     border: 1px solid #C8242F;
     border-radius: 22px;
@@ -414,8 +461,9 @@ select:invalid {
     visibility: hidden;
     min-width: 250px;
     margin-left: -125px;
-    background-color: #333;
-    color: #fff;
+    background-color: #ffffff;
+    border: #FF3535 solid 2px;
+    color: #ff3535;
     text-align: center;
     border-radius: 2px;
     padding: 16px;
@@ -427,6 +475,75 @@ select:invalid {
 }
 
 #snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+#snackbarBlue {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: #ffffff;
+    border: #00b9e1 solid 2px;
+    color: #00b9e1;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    font-size: 17px;
+}
+
+#snackbarBlue.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+#snackbarYellow {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: #ffffff;
+    border: #ffa800 solid 2px;
+    color: #ffa800;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    font-size: 17px;
+}
+
+#snackbarYellow.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+#snackbarGreen {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: #ffffff;
+    border: #00af27 solid 2px;
+    color: #00af27;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    font-size: 17px;
+}
+
+#snackbarGreen.show {
     visibility: visible;
     -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
     animation: fadein 0.5s, fadeout 0.5s 2.5s;

@@ -295,8 +295,29 @@
             <br />
 
             <script>
-              function myFunction() {
+              function Red() {
                 var x = document.getElementById("snackbar");
+                x.className = "show";
+                setTimeout(function () {
+                  x.className = x.className.replace("show", "");
+                }, 3000);
+              }
+              function Blue() {
+                var x = document.getElementById("snackbarBlue");
+                x.className = "show";
+                setTimeout(function () {
+                  x.className = x.className.replace("show", "");
+                }, 3000);
+              }
+              function Yellow() {
+                var x = document.getElementById("snackbarYellow");
+                x.className = "show";
+                setTimeout(function () {
+                  x.className = x.className.replace("show", "");
+                }, 3000);
+              }
+              function Green() {
+                var x = document.getElementById("snackbarGreen");
                 x.className = "show";
                 setTimeout(function () {
                   x.className = x.className.replace("show", "");
@@ -307,23 +328,67 @@
             <form>
               <div class="row">
                 <div class="col">
-                  <button onclick="myFunction()">Show Snackbar</button>
+                  <div onclick="Red()" id="snackRed">
+                    <div style="margin-top: 9px">
+                      <img
+                        src="./images/error-icon.svg"
+                        id="snackIcon"
+                        alt=""
+                      />
+
+                      <b id="snackText" style="color: #ff3535; margin-top: 10px"
+                        >This is an error message</b
+                      >
+                    </div>
+                  </div>
+                  <div id="snackbar">This is an error message...</div>
                 </div>
                 <div class="col">
-                  <button>This is an error message.</button>
+                  <div onclick="Blue()" id="snackBlue">
+                    <div style="margin-top: 9px">
+                      <img src="./images/info-icon.svg" id="snackIcon" alt="" />
+                      <b id="snackText" style="color: #00b9e1"
+                        >This is an information message!</b
+                      >
+                    </div>
+                  </div>
+                  <div id="snackbarBlue">This is an information message...</div>
                 </div>
               </div>
               <br />
               <div class="row">
                 <div class="col">
-                  <button>This is an error message.</button>
+                  <div onclick="Yellow()" id="snackYellow">
+                    <div style="margin-top: 9px">
+                      <img
+                        src="./images/warning-icon.svg"
+                        id="snackIcon"
+                        alt=""
+                      />
+                      <b id="snackText" style="color: #ffa800"
+                        >This is a warning message!</b
+                      >
+                    </div>
+                  </div>
+                  <div id="snackbarYellow">This is a warning message...</div>
                 </div>
                 <div class="col">
-                  <button>This is an error message.</button>
+                  <div onclick="Green()" id="snackGreen">
+                    <div style="margin-top: 9px">
+                      <img
+                        src="./images/success-icon.svg"
+                        id="snackIcon"
+                        alt=""
+                      />
+                      <b id="snackText" style="color: #00af27"
+                        >This is a success message!</b
+                      >
+                    </div>
+                  </div>
+                  <div id="snackbarGreen">This is a success message...</div>
                 </div>
               </div>
               <br />
-              <div id="snackbar"></div>
             </form>
 
             <div id="text2"><span>Call to action</span></div>
@@ -336,7 +401,20 @@
 
             <div id="text2"><span>Tabs</span></div>
             <br />
-            <div class="row"></div>
+
+            <nav>
+              <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Home</button>
+                <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</button>
+                <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</button>
+              </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+              <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">...</div>
+              <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">...</div>
+              <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
+            </div>
+            </div>
           </div>
         </div>
       </div>
