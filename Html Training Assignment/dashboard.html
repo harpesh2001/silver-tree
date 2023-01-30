@@ -23,19 +23,19 @@
     <div class="container main">
       <div class="row header">
         <div class="col-2">
-          <img id="menuBar" src="./images/menu-bar.svg" />
-          <img id="logo" src="./images/logo.svg" />
+          <img id="menuBar" src="./images/menu-bar.svg" alt="" />
+          <img id="logo" src="./images/logo.svg" alt="" />
         </div>
 
         <div class="col-8 search">
-          <img id="search" src="./images/search-icon.svg" />
+          <img id="search" src="./images/search-icon.svg" alt="" />
           Search
         </div>
 
         <div class="col-2">
-          <img id="notification" src="./images/notification-icon.svg" />
-          <img id="profile" src="./images/profile.png" /> John Doe
-          <img id="downArrow" src="./images/downward-arrow.svg" />
+          <img id="notification" src="./images/notification-icon.svg" alt="" />
+          <img id="profile" src="./images/profile.png" alt="" /> John Doe
+          <img id="downArrow" src="./images/downward-arrow.svg" alt="" />
         </div>
       </div>
     </div>
@@ -147,12 +147,12 @@
           <table class="table">
             <thead>
               <tr>
-                <th scope="col" style="color: #adadad">INVOICE</th>
-                <th scope="col" style="color: #adadad">COMPANY NAME</th>
-                <th scope="col" style="color: #adadad">EMAIL</th>
-                <th scope="col" style="color: #adadad">DUE DATE</th>
-                <th scope="col" style="color: #adadad">STATUS</th>
-                <th scope="col" style="color: #adadad">AMOUNT</th>
+                <th scope="col" id="tableRow">INVOICE</th>
+                <th scope="col" id="tableRow">COMPANY NAME</th>
+                <th scope="col" id="tableRow">EMAIL</th>
+                <th scope="col" id="tableRow">DUE DATE</th>
+                <th scope="col" id="tableRow">STATUS</th>
+                <th scope="col" id="tableRow">AMOUNT</th>
               </tr>
             </thead>
             <tbody>
@@ -162,17 +162,7 @@
                 <td>georgia.young@example.com</td>
                 <td>24 May, 2020</td>
                 <td>
-                  <p
-                    class="text-center"
-                    style="
-                      color: #3cdd5f;
-                      background-color: #ebffef;
-                      width: 60px;
-                      height: 20px;
-                    "
-                  >
-                    Paid
-                  </p>
+                  <p class="text-center" id="tableText">Paid</p>
                 </td>
                 <td>$47,800</td>
               </tr>
@@ -182,17 +172,7 @@
                 <td>jessica.hanson@example.com</td>
                 <td>24 May, 2020</td>
                 <td>
-                  <p
-                    class="text-center"
-                    style="
-                      color: #3cdd5f;
-                      background-color: #ebffef;
-                      width: 60px;
-                      height: 20px;
-                    "
-                  >
-                    Paid
-                  </p>
+                  <p class="text-center" id="tableText">Paid</p>
                 </td>
                 <td>$98,000</td>
               </tr>
@@ -202,17 +182,7 @@
                 <td>alma.lawson@example.com</td>
                 <td>8 Sep, 2020</td>
                 <td>
-                  <p
-                    class="text-center"
-                    style="
-                      color: #3cdd5f;
-                      background-color: #ebffef;
-                      width: 60px;
-                      height: 20px;
-                    "
-                  >
-                    Paid
-                  </p>
+                  <p class="text-center" id="tableText">Paid</p>
                 </td>
                 <td>$20,900</td>
               </tr>
@@ -222,17 +192,7 @@
                 <td>kenzi.lawson@example.com</td>
                 <td>22 Oct, 2020</td>
                 <td>
-                  <p
-                    class="text-center"
-                    style="
-                      color: #3cdd5f;
-                      background-color: #ebffef;
-                      width: 60px;
-                      height: 20px;
-                    "
-                  >
-                    Paid
-                  </p>
+                  <p class="text-center" id="tableText">Paid</p>
                 </td>
                 <td>$10,570</td>
               </tr>
@@ -242,17 +202,7 @@
                 <td>jackson.graham@example.com</td>
                 <td>1 Feb, 2020</td>
                 <td>
-                  <p
-                    class="text-center"
-                    style="
-                      color: #ff4545;
-                      background-color: #fff5f5;
-                      width: 60px;
-                      height: 20px;
-                    "
-                  >
-                    Failed
-                  </p>
+                  <p class="text-center" id="tableTextFailed">Failed</p>
                 </td>
                 <td>$10,200</td>
               </tr>
@@ -262,17 +212,7 @@
                 <td>felicia.reid@example.com</td>
                 <td>22 Oct, 2020</td>
                 <td>
-                  <p
-                    class="text-center"
-                    style="
-                      color: #bababa;
-                      background-color: #f8f8f8;
-                      width: 60px;
-                      height: 20px;
-                    "
-                  >
-                    Pending
-                  </p>
+                  <p class="text-center" id="tableTextPending">Pending</p>
                 </td>
                 <td>$12,600</td>
               </tr>
@@ -282,17 +222,7 @@
                 <td>dolores.chambers@example.com</td>
                 <td>21 Sep, 2020</td>
                 <td>
-                  <p
-                    class="text-center"
-                    style="
-                      color: #3cdd5f;
-                      background-color: #ebffef;
-                      width: 60px;
-                      height: 20px;
-                    "
-                  >
-                    Paid
-                  </p>
+                  <p class="text-center" id="tableText">Paid</p>
                 </td>
                 <td>$11,170</td>
               </tr>
@@ -302,17 +232,7 @@
                 <td>nevaeh.simmons@example.com</td>
                 <td>17 Oct, 2020</td>
                 <td>
-                  <p
-                    class="text-center"
-                    style="
-                      color: #ff4545;
-                      background-color: #fff5f5;
-                      width: 60px;
-                      height: 20px;
-                    "
-                  >
-                    Failed
-                  </p>
+                  <p class="text-center" id="tableTextFailed">Failed</p>
                 </td>
                 <td>$28,000</td>
               </tr>
@@ -322,17 +242,7 @@
                 <td>curtis.weaver@example.com</td>
                 <td>21 Sep, 2020</td>
                 <td>
-                  <p
-                    class="text-center"
-                    style="
-                      color: #3cdd5f;
-                      background-color: #ebffef;
-                      width: 60px;
-                      height: 20px;
-                    "
-                  >
-                    Paid
-                  </p>
+                  <p class="text-center" id="tableText">Paid</p>
                 </td>
                 <td>$10,000</td>
               </tr>
