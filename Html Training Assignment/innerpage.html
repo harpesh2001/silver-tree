@@ -23,7 +23,28 @@
       media="screen"
       href="css/dashboardStyle.css"
     />
-    <script src="main.js"></script>
+    <script>
+      function error() {
+        var x = document.getElementById("snackbar1");
+        x.className = "show";
+        setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+      }
+      function inform() {
+        var x = document.getElementById("snackbar2");
+        x.className = "show";
+        setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+      }
+      function warning() {
+        var x = document.getElementById("snackbar3");
+        x.className = "show";
+        setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+      }
+      function success() {
+        var x = document.getElementById("snackbar4");
+        x.className = "show";
+        setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+      }
+      </script>
   </head>
   <body>
     <div class="row header">
@@ -213,8 +234,6 @@
                 </div><br>
             </form>
 
-             
-
               <div id="text2"><span>Checkbox</span></div><br>
               <form>
                 <div class="row checkbox">
@@ -238,23 +257,25 @@
               <form>
                 <div class="row">
                     <div class="col">
-                        <input type="text" class="form-control" placeholder=" Name">
+                      <button onclick="error()">This is an error message.</button>
+                      <div id="snackbar1">This is an error message.</div>
                     </div>
                     <div class="col">
-                        <input type="text" class="form-control" value="johndoe">
+                      <button onclick="inform()">This is an error message.</button>
+                      <div id="snackbar2">This is an error message.</div>
                     </div>
                 </div><br>
 
                 <div class="row">
                     <div class="col">
-                        <input type="password" class="form-control" placeholder="Password">
+                      <button onclick="warning()">This is an error message.</button>
+                      <div id="snackbar3">This is an error message.</div>
                     </div>
                     <div class="col">
-                        <select class="form-control" id="exampleFormControlSelect1" required>
-                            <option selected value="">Dropdown</option>
-                            <option>2</option>
-                            <option>3</option>
-                        </select>
+                        
+                          <button onclick="success()">This is an error message.</button>
+                          <div id="snackbar4">This is an error message.</div>
+                        
                     </div>
                 </div><br>
                 
@@ -270,6 +291,10 @@
                    
 
 
+
+
+
+                
               </div>
         </div>  
 
@@ -277,16 +302,5 @@
     
 </div>
 </div>
-
-
-
-
-
-
-
-
-
-
-
   </body>
 </html>
