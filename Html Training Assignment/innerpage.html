@@ -23,18 +23,6 @@
       media="screen"
       href="css/dashboardStyle.css"
     />
-    <script>
-     function myFunction() { 
-  // Get the snackbar DIV
-  var x = document.getElementById("snackbar");
-
-  // Add the "show" class to DIV
-  x.className = "show";
-
-  // After 3 seconds, remove the show class from DIV
-  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
-}
-      </script>
   </head>
   <body>
     <div class="row header">
@@ -96,204 +84,262 @@
           <p id="db">Analysis</p>
         </div>
 
+        <div class="row">
+          <div class="col formcontainer">
+            <div class="row">
+              <div id="onecolumn"><span>One Column</span></div>
+              <br /><br />
+            </div>
 
-
-
-
-
-        <div class="row ">
-            <div class="col formcontainer">
+            <div class="row">
               <div class="row">
-              <div id="onecolumn"><span>One Column</span></div><br><br>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="formInput"
+                  placeholder="Name"
+                /><br />
               </div>
 
               <div class="row">
-                  <div class="row">
-                      <input type="text" class="form-control" id="formInput" placeholder="Name"></br>
-                  </div>
-
-                  <div class="row">
-                      <select class="form-control" id="formInput" required>
-                          <option selected value="">Dropdown</option>
-                          <option>2</option>
-                          <option>3</option>
-                      </select></br>
-                  </div>
-                  <div class="row">
-                      <textarea class="form-control" id="formInput" rows="5"
-                          placeholder="Multiple line"></textarea>
-                  </div>
-            </div><br><br>
+                <select class="form-control" id="formInput" required>
+                  <option selected value="">Dropdown</option>
+                  <option>2</option>
+                  <option>3</option></select
+                ><br />
+              </div>
+              <div class="row">
+                <textarea
+                  class="form-control"
+                  id="formInput"
+                  rows="5"
+                  placeholder="Multiple line"
+                ></textarea>
+              </div>
+            </div>
+            <br /><br />
 
             <div class="row">
-              <div id="twocolumn"><span>Two Column</span></div><br><br>
+              <div id="twocolumn"><span>Two Column</span></div>
+              <br /><br />
             </div>
-              
-            <div class="row" >  
-              
-                      <div class="col-6">
-                          <input type="text" class="form-control"  placeholder=" Name">
-                      </div>
-                      <div class="col-6">
-                          <input type="text" class="form-control" value="johndoe">
-                      </div>
-                  </div><br>
-
-                  <div class="row">
-                      <div class="col">
-                          <input type="password" class="form-control" placeholder="Password">
-                      </div>
-                      <div class="col">
-                          <select class="form-control" id="exampleFormControlSelect1" required>
-                              <option selected value="">Dropdown</option>
-                              <option>2</option>
-                              <option>3</option>
-                          </select>
-                      </div>
-              
-            </div><br><br>
-
 
             <div class="row">
-              <div id="threecolumn"><span>Three Column</span></div><br><br>
+              <div class="col-6">
+                <input type="text" class="form-control" placeholder=" Name" />
+              </div>
+              <div class="col-6">
+                <input type="text" class="form-control" value="johndoe" />
+              </div>
+            </div>
+            <br />
+
+            <div class="row">
+              <div class="col">
+                <input
+                  type="password"
+                  class="form-control"
+                  placeholder="Password"
+                />
+              </div>
+              <div class="col">
+                <select
+                  class="form-control"
+                  id="exampleFormControlSelect1"
+                  required
+                >
+                  <option selected value="">Dropdown</option>
+                  <option>2</option>
+                  <option>3</option>
+                </select>
+              </div>
+            </div>
+            <br /><br />
+
+            <div class="row">
+              <div id="threecolumn"><span>Three Column</span></div>
+              <br /><br />
             </div>
 
-              <form>
-                  <div class="row">
-                      <div class="col">
-                          <input type="text" class="form-control">
-                      </div>
-                      <div class="col">
-                          <input type="password" class="form-control" value=".........">
-                      </div>
-                      <div class="col">
-                          <input type="text" class="form-control" value="johndoe" id="iuser">
-                      </div>
-                  </div>
-              </form><br><br>
+            <form>
+              <div class="row">
+                <div class="col">
+                  <input type="text" class="form-control" />
+                </div>
+                <div class="col">
+                  <input
+                    type="password"
+                    class="form-control"
+                    value="........."
+                  />
+                </div>
+                <div class="col">
+                  <input
+                    type="text"
+                    class="form-control"
+                    value="johndoe"
+                    id="iuser"
+                  />
+                </div>
+              </div>
+            </form>
+            <br /><br />
 
-              <div id="fourcolumn"><span>Four Column</span></div><br>
+            <div id="fourcolumn"><span>Four Column</span></div>
+            <br />
 
-              <form>
-                  <div class="row">
-                      <div class="col">
-                          <input type="text" class="form-control" value="UI designer" id="uiborder">
-                          <small id="uidesign">Enter Valid Data</small>
-                      </div>
-                      <div class="col">
-                          <input type="text" class="form-control" placeholder="Name">
-                          <small class="form-text text-muted">Enter your full name as per ID</small>
-                      </div>
-                      <div class="col">
-                          <input type="text" class="form-control" value="johndoe">
-                      </div>
-                      <div class="col">
-                          <select class="form-control" required>
-                              <option selected value="">Select</option>
-                              <option>2</option>
-                              <option>3</option>
-                          </select>
-                      </div>
-                  </div>
-              </form><br><br>
+            <form>
+              <div class="row">
+                <div class="col">
+                  <input
+                    type="text"
+                    class="form-control"
+                    value="UI designer"
+                    id="uiborder"
+                  />
+                  <small id="uidesign">Enter Valid Data</small>
+                </div>
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Name" />
+                  <small class="form-text text-muted"
+                    >Enter your full name as per ID</small
+                  >
+                </div>
+                <div class="col">
+                  <input type="text" class="form-control" value="johndoe" />
+                </div>
+                <div class="col">
+                  <select class="form-control" required>
+                    <option selected value="">Select</option>
+                    <option>2</option>
+                    <option>3</option>
+                  </select>
+                </div>
+              </div>
+            </form>
+            <br /><br />
 
-              <div id="otherdesign"><span>Other Design Elements</span></div><br>
-              <div id="text2"><span>File Upload</span></div><br>
-             
-                  <div class="form-group">
-                    <button id="but">Upload</button>
-                  </div>
-              <br>
+            <div id="otherdesign"><span>Other Design Elements</span></div>
+            <br />
+            <div id="text2"><span>File Upload</span></div>
+            <br />
 
+            <div class="form-group">
+              <button id="but">Upload</button>
+            </div>
+            <br />
 
-              <div id="text2"><span>Radio Button</span></div><br>
-              <form>                      
-                <div class="row radio" >
-                  <div class="form-check" >
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="Red" value="option1">
-                    <label class="form-check-label" for="exampleRadios1">
-                      Option 1
-                    </label>
-                  </div>
-                  <div class="form-check second">
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="Red" value="option2">
-                    <label class="form-check-label" for="exampleRadios2">
-                      Option 2
-                    </label>
-                  </div>
-                </div><br>
+            <div id="text2"><span>Radio Button</span></div>
+            <br />
+            <form>
+              <div class="row radio">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="exampleRadios"
+                    id="Red"
+                    value="option1"
+                  />
+                  <label class="form-check-label" for="exampleRadios1">
+                    Option 1
+                  </label>
+                </div>
+                <div class="form-check second">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="exampleRadios"
+                    id="Red"
+                    value="option2"
+                  />
+                  <label class="form-check-label" for="exampleRadios2">
+                    Option 2
+                  </label>
+                </div>
+              </div>
+              <br />
             </form>
 
-              <div id="text2"><span>Checkbox</span></div><br>
-              <form>
-                <div class="row checkbox">
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="Red">
-                    <label class="form-check-label" for="defaultCheck1">
-                      Option 1
-                    </label>
-                    
-                  </div>
-                  <div class="form-check second">
-                    <input class="form-check-input" type="checkbox" value="" id="Red" >
-                    <label class="form-check-label" for="defaultCheck2">
-                      Option 2
-                    </label>
-                  </div>
-                </div><br>
-              </form>
-              
-              <div id="text2"><span>Snackbar</span></div><br>
-              <form>
-                <div class="row">
-                    <div class="col">
-                      <button onclick="myFunction()">Show Snackbar</button>
-
-                      <!-- The actual snackbar -->
-                      <div id="snackbar">Some text some message..</div>
-                      
-                    </div>
-                    <div class="col">
-                      <button>This is an error message.</button>
-                      
-                    </div>
-                </div><br>
-
-                <div class="row">
-                    <div class="col">
-                      <button >This is an error message.</button>
-                      
-                    </div>
-                    <div class="col">
-                        
-                          <button>This is an error message.</button>
-                          
-                        
-                    </div>
-                </div><br>
-                <div id="snackbar"></div>
-              </form>
-
-              <div id="text2"><span>Call to action</span></div><br>
-              <button type="button" class="btn btn-primary">Primary</button>
-              <button type="button" class="btn btn-outline-secondary">Secondary</button>
-              <br><br>
-
-              <div id="text2"><span>Tabs</span></div><br>
-              <div class="row">
-                   
-
-
-
-
-
-                
+            <div id="text2"><span>Checkbox</span></div>
+            <br />
+            <form>
+              <div class="row checkbox">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="Red"
+                  />
+                  <label class="form-check-label" for="defaultCheck1">
+                    Option 1
+                  </label>
+                </div>
+                <div class="form-check second">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="Red"
+                  />
+                  <label class="form-check-label" for="defaultCheck2">
+                    Option 2
+                  </label>
+                </div>
               </div>
-        </div>  
+              <br />
+            </form>
 
+            <div id="text2"><span>Snackbar</span></div>
+            <br />
+
+            <script>
+              function myFunction() {
+                var x = document.getElementById("snackbar");
+                x.className = "show";
+                setTimeout(function () {
+                  x.className = x.className.replace("show", "");
+                }, 3000);
+              }
+            </script>
+
+            <form>
+              <div class="row">
+                <div class="col">
+                  <button onclick="myFunction()">Show Snackbar</button>
+                </div>
+                <div class="col">
+                  <button>This is an error message.</button>
+                </div>
+              </div>
+              <br />
+              <div class="row">
+                <div class="col">
+                  <button>This is an error message.</button>
+                </div>
+                <div class="col">
+                  <button>This is an error message.</button>
+                </div>
+              </div>
+              <br />
+              <div id="snackbar"></div>
+            </form>
+
+            <div id="text2"><span>Call to action</span></div>
+            <br />
+            <button type="button" class="btn btn-primary">Primary</button>
+            <button type="button" class="btn btn-outline-secondary">
+              Secondary
+            </button>
+            <br /><br />
+
+            <div id="text2"><span>Tabs</span></div>
+            <br />
+            <div class="row"></div>
+          </div>
         </div>
-    
-</div>
-</div>
+      </div>
+    </div>
   </body>
 </html>
