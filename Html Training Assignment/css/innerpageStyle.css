@@ -411,6 +411,21 @@ select:invalid {
 
 }
 
+/* 
+.nav-pills .nav-link.active {
+    color: #C8242F;
+    background-color: #FFFFFF;
+}
+
+.nav-link {
+    color: #ADADAD;
+}
+
+.nav-tabs .nav-link.active {
+    color: #C8242F;
+    background-color: #FFFFFF;
+} */
+
 .btn-primary {
     background: #C8242F 0% 0% no-repeat padding-box;
     border: 1px solid #C8242F;

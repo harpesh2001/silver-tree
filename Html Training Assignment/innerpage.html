@@ -172,40 +172,32 @@
             </div>
 
             <div class="row">
-              <div class="col">
-                <div class="row">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="formInput"
-                    placeholder="Name"
-                  />
-
-                  <br />
-                </div>
+              <div class="col col-lg-12 clo-md-6 col-sm-12 col-xl-12">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="formInput"
+                  placeholder="Name"
+                />
 
                 <div class="row">
-                  <div class="col">
-                    <div class="row">
-                      <select class="form-control" id="formInput" required>
-                        <option selected value="">Dropdown</option>
-                        <option>2</option>
-                        <option>3</option>
-                      </select>
-                    </div>
+                  <div class="col col-lg-12 clo-md-6 col-sm-12 col-xl-12">
+                    <select class="form-control" id="formInput" required>
+                      <option selected value="">Dropdown</option>
+                      <option>2</option>
+                      <option>3</option>
+                    </select>
                   </div>
                   <br />
                 </div>
                 <div class="row">
-                  <div class="col">
-                    <div class="row">
-                      <textarea
-                        class="form-control"
-                        id="formInput"
-                        rows="5"
-                        placeholder="Multiple line"
-                      ></textarea>
-                    </div>
+                  <div class="col col-lg-12 clo-md-6 col-sm-12 col-xl-12">
+                    <textarea
+                      class="form-control"
+                      id="formInput"
+                      rows="5"
+                      placeholder="Multiple line"
+                    ></textarea>
                   </div>
                 </div>
               </div>
@@ -522,103 +514,85 @@
             <div id="text2"><span>Tabs</span></div>
             <br />
 
-            <!-- Nav tabs -->
-            <ul class="nav nav-tabs" id="myTab" role="tablist">
-              <li class="nav-item" role="presentation">
-                <button
-                  class="nav-link active"
-                  id="home-tab"
-                  data-bs-toggle="tab"
-                  data-bs-target="#home"
-                  type="button"
-                  role="tab"
-                  aria-controls="home"
-                  aria-selected="true"
+            <div id="text2"><span>Tabs</span></div>
+            <br />
+            <div class="row">
+              <ul class="nav nav-tabs mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link active"
+                    id="pills-home-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-home"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-home"
+                    aria-selected="true"
+                  >
+                    Tab 1
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="pills-profile-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-profile"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-profile"
+                    aria-selected="false"
+                  >
+                    Tab 2
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="pills-contact-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-contact"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-contact"
+                    aria-selected="false"
+                  >
+                    Tab 3
+                  </button>
+                </li>
+              </ul>
+              <div class="tab-content" id="pills-tabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="pills-home"
+                  role="tabpanel"
+                  aria-labelledby="pills-home-tab"
                 >
-                  Home
-                </button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button
-                  class="nav-link"
-                  id="profile-tab"
-                  data-bs-toggle="tab"
-                  data-bs-target="#profile"
-                  type="button"
-                  role="tab"
-                  aria-controls="profile"
-                  aria-selected="false"
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a type
+                  specimen book. It has survived not only five centuries, but
+                  also the leap into electronic typesetting, remaining
+                  essentially unchanged. It was popularised in the 1960s with
+                  the release of Letraset sheets containing
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="pills-profile"
+                  role="tabpanel"
+                  aria-labelledby="pills-profile-tab"
                 >
-                  Profile
-                </button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button
-                  class="nav-link"
-                  id="messages-tab"
-                  data-bs-toggle="tab"
-                  data-bs-target="#messages"
-                  type="button"
-                  role="tab"
-                  aria-controls="messages"
-                  aria-selected="false"
+                  tab 2
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="pills-contact"
+                  role="tabpanel"
+                  aria-labelledby="pills-contact-tab"
                 >
-                  Messages
-                </button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button
-                  class="nav-link"
-                  id="settings-tab"
-                  data-bs-toggle="tab"
-                  data-bs-target="#settings"
-                  type="button"
-                  role="tab"
-                  aria-controls="settings"
-                  aria-selected="false"
-                >
-                  Settings
-                </button>
-              </li>
-            </ul>
-
-            <!-- Tab panes -->
-            <div class="tab-content">
-              <div
-                class="tab-pane active"
-                id="home"
-                role="tabpanel"
-                aria-labelledby="home-tab"
-                tabindex="0"
-              >
-                ...
-              </div>
-              <div
-                class="tab-pane"
-                id="profile"
-                role="tabpanel"
-                aria-labelledby="profile-tab"
-                tabindex="0"
-              >
-                ...
-              </div>
-              <div
-                class="tab-pane"
-                id="messages"
-                role="tabpanel"
-                aria-labelledby="messages-tab"
-                tabindex="0"
-              >
-                ...
-              </div>
-              <div
-                class="tab-pane"
-                id="settings"
-                role="tabpanel"
-                aria-labelledby="settings-tab"
-                tabindex="0"
-              >
-                ...
+                  tab 3
+                </div>
               </div>
             </div>
           </div>
