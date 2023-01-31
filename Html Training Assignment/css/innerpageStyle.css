@@ -3,6 +3,18 @@ body {
     padding: 0;
     top: 0px;
     left: 0px;
+    background: #FAFAFA 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.header {
+    z-index: 2;
+    position: sticky;
+    padding-top: 10px;
+    top: 0px;
+    left: 0px;
+    height: 80px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
     opacity: 1;
 }
 
@@ -73,17 +85,24 @@ body {
 
 }
 
+.navigationContainer:hover {
+    background-color: #FFF3F4;
+    color: #C8242F;
+    transition: 0.2s;
+}
+
+
 .dashboardContainer {
     top: 105px;
     left: 30px;
     width: 183px;
     height: 43px;
 
-    background: #FFF3F4 0% 0% no-repeat padding-box;
     border-radius: 5px;
     opacity: 1;
     margin: 5px;
-    margin-left: 10px;
+    display: flex;
+    align-items: center;
 
 }
 
@@ -357,7 +376,7 @@ select:invalid {
 }
 
 #formInput {
-    width: 1157px;
+    width: 100%;
     margin-top: 10px;
     margin-left: 15px;
     /* UI Properties */
@@ -424,8 +443,7 @@ select:invalid {
     border-radius: 5px;
     opacity: 1;
     height: 45px;
-    vertical-align: middle;
-
+    vertical-align: one
 }
 
 #snackGreen {
@@ -438,8 +456,19 @@ select:invalid {
 }
 
 b {
-    margin-top: 5px;
+
+    /* margin-top: 5px; */
+
+    width: 39px;
+    height: 21px;
+    /* UI Properties */
+    text-align: left;
+    letter-spacing: 0px;
+    color: #3E3E3E;
+    opacity: 1;
+    font-weight: 400;
 }
+
 
 #snackIcon {
     width: 20px;

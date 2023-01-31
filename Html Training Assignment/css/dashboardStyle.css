@@ -84,7 +84,7 @@ body {
 
 .navigationContainer:hover {
     background-color: #FFF3F4;
-    /* color: #C8242F; */
+    color: #C8242F;
     transition: 0.2s;
 }
 
@@ -290,10 +290,12 @@ b {
     margin-right: 15px;
 }
 
-nav1 {
+.nav1 {
     left: 0px;
     background: #FFFFFF;
     opacity: 1;
+    padding: 0px;
+    margin-left: 0px;
 }
 
 #circleUSA {
@@ -333,7 +335,7 @@ nav1 {
 }
 
 .mainContent {
-    padding-left: 20px;
+    margin-left: 20px;
 }
 
 #cont {
