@@ -32,10 +32,12 @@ body {
 }
 
 .header {
+    z-index: 2;
+    position: sticky;
     padding-top: 10px;
     top: 0px;
     left: 0px;
-    width: 1560px;
+    /* width: 1560px; */
     height: 80px;
     /* UI Properties */
     background: #FFFFFF 0% 0% no-repeat padding-box;
@@ -307,7 +309,7 @@ b {
     margin-right: 15px;
 }
 
-nav {
+nav1 {
     left: 0px;
     background: #FFFFFF;
     opacity: 1;
