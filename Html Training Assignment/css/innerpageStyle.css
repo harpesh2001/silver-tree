@@ -274,9 +274,7 @@ b {
     opacity: 1;
 }
 
-.mainContent {
-    /* / padding-left: 20px;/ */
-}
+.mainContent {}
 
 .cont {
     padding-top: 0;
@@ -295,7 +293,6 @@ b {
     margin-top: 15px;
 }
 
-/*-----------------*/
 .formcontainer {
     padding: 15.98px 30.5px 0px 30.5px;
     border-radius: 5px;
@@ -310,8 +307,6 @@ b {
 }
 
 #twocolumn {
-    /* margin-top: 44px;
-    margin-left: 29px; */
     color: #3E3E3E;
     font-size: 25px;
     font-weight: bold;
@@ -322,8 +317,6 @@ select:invalid {
 }
 
 #threecolumn {
-    /* margin-top: 44px;
-    margin-left: 29px; */
     color: #3E3E3E;
     font-size: 25px;
     font-weight: bold;
@@ -334,8 +327,6 @@ select:invalid {
 }
 
 #fourcolumn {
-    /* margin-top: 44px;
-    margin-left: 29px; */
     color: #3E3E3E;
     font-size: 25px;
     font-weight: bold;
@@ -350,8 +341,6 @@ select:invalid {
 }
 
 #otherdesign {
-    /* margin-top: 44px;
-    margin-left: 29px; */
     color: #3E3E3E;
     font-size: 25px;
     font-weight: bold;
@@ -379,7 +368,6 @@ select:invalid {
     width: 100%;
     margin-top: 10px;
     margin-left: 15px;
-    /* UI Properties */
     border: 1px solid #ADADAD;
     border-radius: 5px;
     opacity: 1;
@@ -411,7 +399,6 @@ select:invalid {
 
 }
 
-/* 
 .nav-pills .nav-link.active {
     color: #C8242F;
     background-color: #FFFFFF;
@@ -424,7 +411,7 @@ select:invalid {
 .nav-tabs .nav-link.active {
     color: #C8242F;
     background-color: #FFFFFF;
-} */
+}
 
 .btn-primary {
     background: #C8242F 0% 0% no-repeat padding-box;
