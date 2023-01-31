@@ -18,6 +18,56 @@
       href="css/dashboardStyle.css"
     />
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+      function changeDashboard() {
+        document.getElementById("dashboard").src =
+          "./images/dashboard-active.svg";
+      }
+      function changeGraph() {
+        document.getElementById("analysis").src = "./images/graph-active.svg";
+      }
+      function changeHistory() {
+        document.getElementById("history").src = "./images/clock-active.svg";
+      }
+      function changeInbox() {
+        document.getElementById("index").src = "./images/inbox-active.svg";
+      }
+      function changeMaintain() {
+        document.getElementById("maintanance").src =
+          "./images/maintenance-active.svg";
+      }
+      function changeSettings() {
+        document.getElementById("settings").src = "./images/setting-active.svg";
+      }
+      function changeUser() {
+        document.getElementById("user").src = "./images/user-active.svg";
+      }
+
+      function changeDefaultDashboard() {
+        document.getElementById("dashboard").src =
+          "./images/dashboard-default.svg";
+      }
+      function changeDefaultGraph() {
+        document.getElementById("analysis").src = "./images/graph-default.svg";
+      }
+      function changeDefaultHistory() {
+        document.getElementById("history").src = "./images/clock-default.svg";
+      }
+      function changeDefaultInbox() {
+        document.getElementById("index").src = "./images/inbox-default.svg";
+      }
+      function changeDefaultMaintain() {
+        document.getElementById("maintanance").src =
+          "./images/maintenance-default.svg";
+      }
+      function changeDefaultSettings() {
+        document.getElementById("settings").src =
+          "./images/setting-default.svg";
+      }
+      function changeDefaultUser() {
+        document.getElementById("user").src = "./images/user-default.svg";
+      }
+    </script>
   </head>
   <body>
     <div class="row header">
@@ -40,37 +90,65 @@
     <div class="row mainContent">
       <div class="col-2 nav1">
         <div>
-          <div class="row dashboardContainer">
-            <img id="dashboard" src="./images/dashboard-active.svg" alt="" />
-            <b id="active">Dashboard</b>
+          <div
+            class="row dashboardContainer navigationContainer"
+            onmouseover="changeDashboard()"
+            onmouseleave="changeDefaultDashboard()"
+          >
+            <img id="dashboard" src="./images/dashboard-default.svg" alt="" />
+            <b id="text">Dashboard</b>
           </div>
-          <div class="row anaContainer">
+          <div
+            class="row anaContainer navigationContainer"
+            onmouseover="changeGraph()"
+            onmouseleave="changeDefaultGraph()"
+          >
             <img id="analysis" src="./images/graph-default.svg" alt="" />
-            <b>Analysis</b>
+            <b id="text">Analysis</b>
           </div>
-          <div class="row indContainer">
+          <div
+            class="row indContainer navigationContainer"
+            onmouseover="changeInbox()"
+            onmouseleave="changeDefaultInbox()"
+          >
             <img id="index" src="./images/inbox-default.svg" alt="" />
-            <b>Inbox</b>
+            <b id="text">Inbox</b>
           </div>
-          <div class="row hisContainer">
+          <div
+            class="row hisContainer navigationContainer"
+            onmouseover="changeHistory()"
+            onmouseleave="changeDefaultHistory()"
+          >
             <img id="history" src="./images/clock-default.svg" alt="" />
-            <b>History</b>
+            <b id="text">History</b>
           </div>
-          <div class="row userContainer">
+          <div
+            class="row userContainer navigationContainer"
+            onmouseover="changeUser()"
+            onmouseleave="changeDefaultUser()"
+          >
             <img id="user" src="./images/user-default.svg" alt="" />
-            <b>Users</b>
+            <b id="text">Users</b>
           </div>
-          <div class="row maintainContainer">
+          <div
+            class="row maintainContainer navigationContainer"
+            onmouseover="changeMaintain()"
+            onmouseleave="changeDefaultMaintain()"
+          >
             <img
               id="maintanance"
               src="./images/maintenance-default.svg"
               alt=""
             />
-            <b>Maintenance</b>
+            <b id="text">Maintenance</b>
           </div>
-          <div class="row settingsContainer">
+          <div
+            class="row settingsContainer navigationContainer"
+            onmouseover="changeSettings()"
+            onmouseleave="changeDefaultSettings()"
+          >
             <img id="settings" src="./images/setting-default.svg" alt="" />
-            <b>Setting</b>
+            <b id="text">Setting</b>
           </div>
         </div>
       </div>
