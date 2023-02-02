@@ -20,8 +20,6 @@ body {
 
 .main {
     align-self: flex-start;
-    /* margin: 0;
-    padding: 0; */
 }
 
 #menuBar {
@@ -459,11 +457,9 @@ select:invalid {
 
 b {
 
-    /* margin-top: 5px; */
 
     width: 39px;
     height: 21px;
-    /* UI Properties */
     text-align: left;
     letter-spacing: 0px;
     color: #3E3E3E;
