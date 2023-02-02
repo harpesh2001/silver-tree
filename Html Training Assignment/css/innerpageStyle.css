@@ -11,6 +11,10 @@ body {
     .nav1 {
         display: none;
     }
+
+    .ana {
+        max-width: 100%;
+    }
 }
 
 .header {
